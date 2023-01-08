@@ -1,4 +1,4 @@
-package com.Model;
+package com.Model.model;
 
 public class transaksi {
     private String Namabuku;

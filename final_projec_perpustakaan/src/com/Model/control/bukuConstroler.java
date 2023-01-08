@@ -1,8 +1,10 @@
-package com.Model;
+package com.Model.control;
 
 import java.util.List;
 import java.util.Scanner;
-import com.Model.buku;
+
+import com.Model.Utility;
+import com.Model.model.buku;
 
 
 public class bukuConstroler {
@@ -87,10 +89,14 @@ public class bukuConstroler {
             System.out.println("Masukkan Penerbit");
             String penerbit = scan.nextLine();
 
+            if (!penerbit.equals("")) {
+                listbuku.get(inputan).setPenerbit(penerbit);
+            }
             System.out.println("Masukkan Stok");
             int stok = Utility.inputInt(scan.nextLine());
             if (stok >= 0) {
                 listbuku.get(inputan).setJumlahbuku(stok);
+                
             }
         }
     }

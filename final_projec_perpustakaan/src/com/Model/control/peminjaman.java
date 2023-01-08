@@ -1,10 +1,11 @@
-package com.Model;
+package com.Model.control;
 
 import java.util.List;
 import java.util.Scanner;
 
-import com.Model.buku;
-import com.Model.transaksi;
+import com.Model.Utility;
+import com.Model.model.buku;
+import com.Model.model.transaksi;
 
 public class peminjaman {
     private List<transaksi> listtransaksi;
@@ -65,9 +66,9 @@ public class peminjaman {
                     transaksi.setPenerbit(penerbit);
                     listtransaksi.add(transaksi);
 
-                    System.out.println("Pembelian Berhasil");
+                    System.out.println("Peminjaman Berhasil");
                 } else {
-                    System.out.println("Jumlah Pembelian Melebihi Stok");
+                    System.out.println("Jumlah Peminjaman Melebihi Stok");
                 }
             }
 

@@ -1,7 +1,8 @@
-package com.Model;
+package com.Model.control;
 
 import java.util.List;
-import com.Model.transaksi;
+
+import com.Model.model.transaksi;
 
 public class laporan {
     private List<transaksi> listtransaksi;

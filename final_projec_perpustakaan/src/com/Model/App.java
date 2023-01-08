@@ -5,6 +5,12 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
+import com.Model.control.bukuConstroler;
+import com.Model.control.laporan;
+import com.Model.control.peminjaman;
+import com.Model.model.buku;
+import com.Model.model.transaksi;
+
 public class App {
     static Scanner scan = new Scanner (System.in);
     public static final Locale  locale = new Locale( "in","ID");    
